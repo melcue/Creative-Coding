@@ -1,0 +1,22 @@
+html {
+  color: #888888;
+  font-family: Garamond, serif;
+}
+
+h2 {
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+canvas {
+  border: 3px solid #888888;
+  border-radius: 20px;
+}
