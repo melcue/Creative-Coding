@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+  
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/UChicago-PL/cs11111-assets/prelude.js" ></script>
+</head>
+  <body>
+    <!-- An example, placeholder survey question and UI -->
+    <div id="container">
+      <h1 id = "numQuestion">WELCOME!</h1>
+      <p id = "sentence">Click on START to begin</p>
+      <h1 id = "small">QUESTION</h1>
+      <p id= "question"></p>
+      <input type="radio" name="radioOption" id="option1" value="Yes" />
+      <label for="yes" id = "answer1"></label><br />
+      <input type="radio" name="radioOption" id="option2" value="No" />
+      <label for="no" id = "answer2"></label><br />
+      <input
+        type="button"
+        id="submitAnswer"
+        class="button"
+        value="Submit Answer"
+      />
+      <input
+        type="button"
+        id="start"
+        class="button"
+        value="START"
+      />
+      <input
+        type="button"
+        id="nextQ"
+        class="button"
+        value="Next Question"
+      />
+    </div>
+
+    <!-- Firebase configuration -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    <script>
+      const firebaseConfig = {
+  apiKey: "AIzaSyCYGDzCIJ0-LVhbWQaftYRHliQyH1kL80w",
+  authDomain: "project-8e313.firebaseapp.com",
+  databaseURL: "https://project-8e313-default-rtdb.firebaseio.com",
+  projectId: "project-8e313",
+  storageBucket: "project-8e313.appspot.com",
+  messagingSenderId: "24008137791",
+  appId: "1:24008137791:web:0d539fbd07326b5e1c6c8a",
+  measurementId: "G-9NSQ8T04W2"
+};
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <!-- Your typo injection functions -->
+    <script src="typos.js"></script>
+    
+
+    <!-- Your survey sentences and questions -->
+    <script src="tasks.js"></script>
+    <!-- Your survey user interface and application -->
+    <script src="sketch.js"></script>
+  </body>
+</html>
